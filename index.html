@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en" style="height:99%;border:2px solid #2BECF3;border-radius: 0.32rem;">
+<head>
+ 	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" >
+	<title>demo ajax</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="rem.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body  ng-app="myEle">
+	<ng-view></ng-view>
+	<script type="text/javascript" src="zepto.js"></script>
+	<script type="text/javascript" src="angular/angular.js"></script>
+	<script type="text/javascript" src="angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="controller/homesearch.js"></script>
+	<script type="text/javascript" src="controller/homeindex.js"></script>
+	<script type="text/javascript" src="controller/homelogin.js"></script>
+	<script type="text/javascript" src="controller/sortindex.js"></script>
+	<script type="text/javascript" src="director/reslist.js"></script>
+	<script>
+	//city_id=1&keyword=%E6%B1%89%E5%BA%AD&type=search
+	   /*$("#search").click(function(event){
+	   		$.ajax({
+	   			url: "/restapi/v1/pois",
+	   			type: "get",
+	   			data: {
+	   				city_id: 1,//上海 
+	   				keyword: $("#kw").val(),
+	   				type:'search'
+	   			},
+	   			success: function(res){
+	   				var $content = $('.content');
+	   				var srr = "";
+	   				srr += "<ul>";
+	   				for(var i =0; i< res.length; i++){
+	   					srr += "<li><a href='#'>"+res[i].address+"</a></li>";
+	   					console.log(res[i].address);
+
+	   				}
+	   				srr += "</ul>";
+	   				$content.html(srr);
+	   				console.log(res);		 	
+	   			}
+	   		})	 	
+	   });*/
+	</script>
+</body>
+</html>

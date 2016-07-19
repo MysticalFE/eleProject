@@ -1,0 +1,23 @@
+<header class="home_header">
+	<article class="home_article">
+		<a class="home_search"><img src="img/big.png" class="home_img"></a>
+		<h1 class="home_h1">{{search_home}}</h1>
+		<a class="home_login" ng-href="#/homeLogin">{{pageName}}</a>
+	</article>
+</header>
+<section class="home_type">
+	<dl ng-repeat="item in typelist">
+		<a ng-href="#/sortindex/{{geohash}}{{item.link}}">
+		<dt>
+			<!-- <img src="http://fuss10.elemecdn.com/"+{{item.image_url}}+"?imageMogr/quality/75/format/webp/"> -->
+			<img src="http://fuss10.elemecdn.com/f/fb/cc841d212e89365a24d1260504bddjpeg.jpeg?imageMogr/quality/75/format/webp/">
+		</dt>
+		<dd>{{item.title}}</dd>
+		</a>
+	</dl>
+</section> 
+<section class="home_he"></section>
+<section class="home_nearby" when-scrolled="loadMore()">
+	<h1 class="nearby_h1"><img src="img/nearby.png">附近商家</h1>
+	<res-list url="homeConfig"></res-list>
+</section>

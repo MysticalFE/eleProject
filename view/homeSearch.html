@@ -1,0 +1,24 @@
+<section class="header">
+	<p class="search_p">{{pageName}}</p>
+	<input class="search_kw" type="search" placeholder="搜索地理位置" ng-model="exact_place"> 
+	<select ng-model="select_key" class="search_select">
+		<option value="ele">饿了么搜索</option>
+		<option value="mtuan">美团外卖搜索</option>
+		<option value="bdu">百度外卖搜索</option>
+	</select>
+	<button class="search_button btn" ng-click="search_click()">搜索</button>
+	<!-- <button class="search_button btn" ng-click="ele_click()">搜索</button> -->
+	<aside ng-show="search_loading"><img src="img/search.jpg"></aside>
+	<!-- <button class="search_button btn " ng-click="mt_click()">美团外卖搜索</button> -->
+	<!-- <button class="search_button btn " ng-click="dz_click()">大众点评搜索</button> -->
+	<!-- <button class="search_button btn " ng-click="bd_click()">百度外卖搜索</button> -->
+	<section class="content" ng-show="content_home">
+		<ul>
+			<li ng-repeat="item in placeList">
+				<a ng-href="#/homeIndex/{{item.geohash}}">
+					{{item.name}}	
+				</a>		
+			</li>
+		</ul>
+	</section>
+</section> 
