@@ -22,7 +22,7 @@ nginx 对于前端来说，非常的重要，因为它能帮助提高非常非�
 部署环境的核心代码
 server {
     listen       800;
-    server_name  gyf.ele.com;
+    server_name  jxk.ele.com;
 
     charset utf-8;
     access_log off;
